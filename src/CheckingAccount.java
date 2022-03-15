@@ -22,7 +22,7 @@ public class CheckingAccount extends BankAccount
      *  Constructs a checking account with a given balance.
      */
     public CheckingAccount(double initialBalance) {
-        // <<< Code Not Complete >>>
+        super(initialBalance);
     }
 
     /**
@@ -31,7 +31,8 @@ public class CheckingAccount extends BankAccount
      * don't forget to charge a transaction fee
      */
     public void deposit(double amount)  {
-        // <<< Code Not Complete >>>
+        super.deposit(amount - TRANSACTION_FEE);
+
     }
 
     /**
@@ -40,7 +41,11 @@ public class CheckingAccount extends BankAccount
      * don't forget to charge a transaction fee
      */
     public void withdraw(double amount)  {
-        // <<< Code Not Complete >>>
+        super.withdraw(amount - TRANSACTION_FEE);
+    }
+
+    public void withdrawNoFee(double amount) {
+        super.withdraw(amount);
     }
 
     /**
@@ -48,6 +53,7 @@ public class CheckingAccount extends BankAccount
      *   Transfers money from the account to another account
      */
     public void transfer(double amount, BankAccount other)  {
-        // <<< Code Not Complete >>>
+        this.withdraw(amount);
+        other.deposit(amount);
     }
 }

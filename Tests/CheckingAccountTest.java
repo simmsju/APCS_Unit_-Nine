@@ -6,6 +6,11 @@ class CheckingAccountTest {
 
     @Test
     void deposit() {
+        CheckingAccount c = new CheckingAccount(100);
+        double expected = 104.50;
+        c.deposit(5);
+        double actual = c.getBalance();
+        assertEquals(expected, actual);
     }
 
     @Test
@@ -14,5 +19,8 @@ class CheckingAccountTest {
 
     @Test
     void transfer() {
+        CheckingAccount a = new CheckingAccount(100);
+        CheckingAccount b = new CheckingAccount(200);
+        a.transfer(50, b);
     }
 }

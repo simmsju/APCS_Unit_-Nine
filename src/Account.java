@@ -3,6 +3,9 @@ public class Account
     private String name;
     private double balance;
 
+    public Account() {
+        System.out.println("Made a new account");
+    }
     public Account(String name, double balance)
     {
         this.name = name;
@@ -25,8 +28,10 @@ public class Account
    and has an interest rate and a constructor, toString, and
    equals methods.
 */
-class Savings
+class Savings extends Account
 {
-
+    public Savings() {
+        System.out.println("New Savings account");
+    }
 }
 

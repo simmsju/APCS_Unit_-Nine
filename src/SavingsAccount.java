@@ -20,6 +20,9 @@ public class SavingsAccount extends BankAccount
      */
     public SavingsAccount(double initialBalance, double rate) {
         // <<<  CODE NOT COMPLETE >>>
+//        super(MINIMUM_BALANCE);
+//        if (initialBalance > MINIMUM_BALANCE)
+
     }
 
 
