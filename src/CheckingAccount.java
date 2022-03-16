@@ -9,7 +9,7 @@
  *
  *  Note: methods can be overridden, but instance fields can NOT.
  */
-public class CheckingAccount extends BankAccount
+public class CheckingAccount
 {
     /**
      * The bank charges a fee 'TRANSACTION_FEE' for
@@ -22,16 +22,16 @@ public class CheckingAccount extends BankAccount
      *  Constructs a checking account with a given balance.
      */
     public CheckingAccount(double initialBalance) {
-        super(initialBalance);
+        // <<< Code Not Complete >>>
     }
 
     /**
      * <<< COMPLETE THE METHOD BELOW >>>
-     * override the deposit method in superclass
+     * override the deposit method in superclass (use super)
      * don't forget to charge a transaction fee
      */
     public void deposit(double amount)  {
-        super.deposit(amount - TRANSACTION_FEE);
+        // <<< Code Not Complete >>>
 
     }
 
@@ -41,19 +41,15 @@ public class CheckingAccount extends BankAccount
      * don't forget to charge a transaction fee
      */
     public void withdraw(double amount)  {
-        super.withdraw(amount - TRANSACTION_FEE);
+        // <<< Code Not Complete >>>
     }
 
-    public void withdrawNoFee(double amount) {
-        super.withdraw(amount);
-    }
 
     /**
      * <<< COMPLETE THE METHOD BELOW >>>
      *   Transfers money from the account to another account
      */
     public void transfer(double amount, BankAccount other)  {
-        this.withdraw(amount);
-        other.deposit(amount);
+        // <<< Code Not Complete >>>
     }
 }

@@ -1,3 +1,3 @@
-public class Rectangle extends Quadrilateral{
+public class Rectangle {
 
 }
