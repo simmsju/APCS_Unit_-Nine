@@ -16,22 +16,10 @@ public class Account
         return name + ", " + balance;
     }
 
-    public boolean equals(Object other)
-    {
-        Account otherAccount = (Account) other;
-        return (this.balance == otherAccount.balance) &&
-                this.name.equals(otherAccount.name);
-    }
+
+
+
 
 }
-/* Write the Savings class which inherits from Account
-   and has an interest rate and a constructor, toString, and
-   equals methods.
-*/
-class Savings extends Account
-{
-    public Savings() {
-        System.out.println("New Savings account");
-    }
-}
+
 
