@@ -1,4 +1,3 @@
-public class Captain extends UltimatePlayer{
-
+public class Captain {
 
 }
