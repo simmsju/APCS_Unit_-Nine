@@ -16,7 +16,11 @@ public class Account
         return name + ", " + balance;
     }
 
-
+    @Override
+    public boolean equals(Object other) {
+        Account account = (Account)other;
+        return name.equals(account.name) && balance == account.balance;
+    }
 
 
 
